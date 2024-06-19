@@ -1,0 +1,13 @@
+a=int(input('Enter The Number:'))
+b=int(input('Enter The Number:'))
+c=int(input('Enter The Number:'))
+if a>b:
+    if a>c:
+        print(a)
+    else:
+        print(c)
+else:
+    if b>c:
+        print(b)
+    else:
+        print(c)
