@@ -1,0 +1,8 @@
+# import pyth
+# pyth.fun()
+# import pyth as p
+# p.fun()
+# from pyth import fun
+# fun()
+from pyth import*
+fun()
