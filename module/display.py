@@ -4,3 +4,4 @@ def display(data):
         print("Id is : ",i['id'])
         print("Age is : ",i['age'])
         print("Place is ",i['place'])
+    #print(data)
