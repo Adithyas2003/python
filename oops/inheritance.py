@@ -112,23 +112,35 @@
 #     def e1(self):
 #         print("e1")
 # abc=A()
-# abc.a1()
-# hij=B()
-# hij.b1()
-# klm=C()
-# klm.c1()
-# mno=D()
-# mno.d1()
-# pqr=E()
-# pqr.e1()
-# xyz=F()
-# xyz.f1()
+# abc.a1()class Birds:
+
 
 
 #example program:
 class Birds:
     def __init__(self,species):
         self.species=species
+    def speak(self):
+        
+class parrot(Birds):
+    def speak(self):
+        print("squark")
+class kingfisher(Birds):
+    def speak(self):
+        print("tweet tweet")
+class crow(Birds):
+    def speak(self):
+        print("craa craa")
+
+parrot=Birds()
+parrot.speak()
+kingfisher=Birds()
+kingfisher.speak()
+crow=Birds()
+crow.speak()
+
+
+
 
 
 
