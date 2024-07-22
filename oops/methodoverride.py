@@ -70,20 +70,56 @@
 # print(re.search('[0-9]',b))
 
 #dot:
-a='Hello2'
+# a='Hello2'
+# import re
+# print(re.search('e.',a))
+
+# #star:
+# print(re.search("h.*",a))
+# # plus:
+# print(re.search('l.+',a))
+# # ?:
+# print(re.search('o.?',a))
+
+# print(re.search('[a-z]',a))
+# print(re.search('[A-Z]',a))
+# print(re.search('[0-9]',a))
+# print(re.search('[a-z].',a))
+# print(re.search('[a-z]..',a))
+# print(re.search('[a-z].?',a))
+
+
+# import re
+# a='HAIhello32'
+# print(re.search('[a-z]',a))
+# print(re.search('[a-z][0-9]',a))
+# print(re.search('[a-z][0-9]',a))
+# print(re.search('[A-Z][a-z][0-9][0-9]',a))
+# print(re.search('[A-Z].*[a-z][0-9][0-9]',a))
+
+
+# import re
+# b='welcome45'
+# print(re.search('[A-Za-z0-9]',b))
+# print(re.search('[0-9]$',b))
+# print(re.search('5$',b))
+# print(re.search('welcome45$',b))
+
+#phone number validation:
+# import re
+# a=input("enter number")
+# if len(a)==10 and a.isdigit() and re.search('[6-9].{9}',a):
+#     print("valid")
+# else:
+#     print("invalid")
+
+#email validation:
 import re
-print(re.search('e.',a))
+a=input("enter your email Id")
+pattern="[a-z].*@gmail.com"
+if re.search(pattern,a):
+    print("valid")
+else:
+    print("invalid")
 
-#star:
-print(re.search("h.*",a))
-# plus:
-print(re.search('l.+',a))
-# ?:
-print(re.search('o.?',a))
 
-print(re.search('[a-z]',a))
-print(re.search('[A-Z]',a))
-print(re.search('[0-9]',a))
-print(re.search('[a-z].',a))
-print(re.search('[a-z]..',a))
-print(re.search('[a-z].?',a))
